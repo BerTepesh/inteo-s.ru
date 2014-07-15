@@ -1,0 +1,241 @@
+<!doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Inteo</title>
+	<meta name="viewport" content="width=1000">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="f/css/main.css">
+	<link rel="stylesheet" href="f/css/normalize.css">
+
+	<!--[if lte IE 9]><link rel="stylesheet" href="f/css/ie.css"><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="f/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="f/js/jquery-1.10.2.min.js"></script>
+	<script src="f/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script src="f/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script src="f/js/jquery.touchSwipe.min.js"></script>
+	<script src="f/js/jquery.transit.min.js"></script>
+	<script src="f/js/common.js"></script>
+	<!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+	
+	<script>
+		function new_project_light_on(n)
+		{
+			switch(n)
+			{
+				case 1: 
+				{
+					$(".new-projects__project__back1").css('backgroundPosition', '0px -230px');
+					break;
+				}
+				case 2: 
+				{
+					$(".new-projects__project__back2").css('backgroundPosition', '-390px -230px');
+					break;
+				}
+				case 3: 
+				{
+					$(".new-projects__project__back3").css('backgroundPosition', '-780px -230px');
+					break;
+				}
+				case 4: 
+				{
+					$(".new-projects__project__back4").css('backgroundPosition', '1170px -230px');
+					break;
+				}
+			}
+		}
+		
+		function new_project_light_off(n)
+		{
+			switch(n)
+			{
+				case 1: 
+				{
+					$(".new-projects__project__back1").css('backgroundPosition', '0px 0px');
+					break;
+				}
+				case 2: 
+				{
+					$(".new-projects__project__back2").css('backgroundPosition', '-390px 0px');
+					break;
+				}
+				case 3: 
+				{
+					$(".new-projects__project__back3").css('backgroundPosition', '-780px 0px');
+					break;
+				}
+				case 4: 
+				{
+					$(".new-projects__project__back4").css('backgroundPosition', '1170px 0px');
+					break;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class = "main-wrap">
+		<div class = "header">
+			<div class = "header__logo">
+				<img class = "header__logo_image" src="f/i/logo.png" alt="">
+				<span class = "header__logo__anim header__logo__anim_elem1"></span>
+				<span class = "header__logo__anim header__logo__anim_elem2"></span>
+				<span class = "header__logo__anim header__logo__anim_elem3"></span>
+				<span class = "header__logo__anim header__logo__anim_elem4"></span>
+				<span class = "header__logo__anim header__logo__anim_elem5"></span>
+				<a class = "header__site-link" href = "#"></a>
+			</div>
+			<a href = "#" class = "header__contact-us">Связаться с нами</a>
+			<span class = "header__text">digital-агентство полного цикла</span>
+		</div>
+		<div class = "main">
+			<ul class = "main__menu">
+				<li class = "main__menu__item">
+					<a class = "main__menu__item__link  main__menu__item__link_sub-menu" href = "#">Агентство</a>
+					<ul class = "main__menu__sub-menu">
+						<li><a class = "main__menu__item__link main__menu__item__link_sub-link" href = "#">Агентство1</a></li>
+						<li><a class = "main__menu__item__link main__menu__item__link_sub-link" href = "#">Агентство2</a></li>
+						<li><a class = "main__menu__item__link main__menu__item__link_sub-link" href = "#">Агентство3</a></li>
+					</ul>
+				</li>
+				
+				<li class = "main__menu__item"><a class = "main__menu__item__link" href = "#">Проекты</a></li>
+				<li class = "main__menu__item">
+					<a class = "main__menu__item__link main__menu__item__link_sub-menu" href = "#">Услуги</a>
+					<ul class = "main__menu__sub-menu">
+						<li><a class = "main__menu__item__link main__menu__item__link_sub-link" href = "#">Аналитика</a></li>
+						<li><a class = "main__menu__item__link main__menu__item__link_sub-link" href = "#">Создание сайтов</a></li>
+						<li><a class = "main__menu__item__link main__menu__item__link_sub-link" href = "#">Контекстная реклама</a></li>
+						<li><a class = "main__menu__item__link main__menu__item__link_sub-link" href = "#">SEO-оптимизация</a></li>						
+					</ul>
+				</li>
+				<li class = "main__menu__item">
+					<a class = "main__menu__item__link  main__menu__item__link_sub-menu" href = "#">Процессы</a>
+					<ul class = "main__menu__sub-menu">
+						<li><a class = "main__menu__item__link main__menu__item__link_sub-link" href = "#">Процессы1</a></li>
+						<li><a class = "main__menu__item__link main__menu__item__link_sub-link" href = "#">Процессы2</a></li>
+						<li><a class = "main__menu__item__link main__menu__item__link_sub-link" href = "#">Процессы3</a></li>
+					</ul>
+				</li>
+				<li class = "main__menu__item"><a class = "main__menu__item__link" href = "#">Блог</a></li>
+				<li class = "main__menu__item"><a class = "main__menu__item__link" href = "#">Контакты</a></li>
+			
+				<div class = "social social_top">
+					<span class = "social__image social__image_vk"><a href = "#"></a></span>
+					<span class = "social__image social__image_fb"><a href = "#"></a></span>
+					<span class = "social__image social__image_tw"><a href = "#"></a></span>
+				</div>
+			</ul>
+			
+			<div class = "analyst">		
+				<span class = "analyst__title analyst__title_analyst">Аналитика.</span>
+				<span class = "analyst__title analyst__title_process">Процессы.</span>
+				<span class = "analyst__title analyst__title_result">Результат.</span>
+				<span class = "analyst__text">Мы делаем сайты с готовым контентом, проектируем интерфейсы и создаём магазины.</span>
+				
+				<div class = "analyst__sprites">
+					<span class = "analyst__sprites__item analyst__sprites__item_1"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_2"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_3"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_4"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_5"></span>
+					
+					<span class = "analyst__sprites__item analyst__sprites__item_6"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_7"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_8"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_9"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_10"></span>
+					
+					<span class = "analyst__sprites__item analyst__sprites__item_11"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_12"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_13"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_14"></span>
+					<span class = "analyst__sprites__item analyst__sprites__item_15"></span>
+				</div>
+			</div>
+			<div style = "clear: both"></div>
+			<div class = "new-projects">
+				<span class = "new-projects__title">Новые <a href = "#">проекты</a></span>
+				<div style = "clear: both"></div>
+				<div class = "new-projects__project">
+					<img class = "new-projects__project__icon new-projects__project__icon1" src = "f/i/projects/project2.png"></img>
+					<a href = "#" class = "new-projects__project__title" onmouseover = "new_project_light_on(1);" onmouseout = "new_project_light_off(1);">Бриллиантов<span class = "new-projects__project__text">Интернет-магазин украшений с якутскими бриллиантаи.</span></a>
+					<span class = "new-projects__project__back new-projects__project__back1"></span>
+				</div>
+				
+				<div class = "new-projects__project" style = "margin-right: 0;">
+					<img class = "new-projects__project__icon new-projects__project__icon2" src = "f/i/projects/project3.png"></img>
+					<a href = "#" class = "new-projects__project__title" onmouseover = "new_project_light_on(2);" onmouseout = "new_project_light_off(2);">Nord Home<span class = "new-projects__project__text">Сайт строительной компании.</span></a>
+					<span class = "new-projects__project__back new-projects__project__back2"></span>
+				</div>
+				
+				<div class = "new-projects__project">
+					<img class = "new-projects__project__icon new-projects__project__icon3" src = "f/i/projects/project4.png"></img>
+					<a href = "#" class = "new-projects__project__title" onmouseover = "new_project_light_on(3);" onmouseout = "new_project_light_off(3);">80 иконок<span class = "new-projects__project__text">Огромный набор иконок для компании «Рустехника».</span></a>
+					<span class = "new-projects__project__back new-projects__project__back3"></span>
+				</div>
+				
+				<div class = "new-projects__project" style = "margin-right: 0;">
+					<img class = "new-projects__project__icon new-projects__project__icon4" src = "f/i/projects/project1.png"></img>
+					<a href = "#" class = "new-projects__project__title" onmouseover = "new_project_light_on(4);" onmouseout = "new_project_light_off(4);">EMB Center<span class = "new-projects__project__text">Сайт и интернет-магазин для центра машинной вышивки.</span></a>
+					<span class = "new-projects__project__back new-projects__project__back4"></span>
+				</div>
+			</div>
+			<div style = "clear: both"></div>
+			<div class = "we-do">
+				<span class = "we-do__title">Мы <a href = "#">создаем</a> и <a href = "#">продвигаем</a> сайты, размещаем контекстную рекламу, <a href = "#">занимаемся </a>веб-аналитикой.</span>
+				
+				<div class = "we-do__sprites">
+					<span class = "we-do__sprite__item we-do__sprite__item_1"></span>
+					<span class = "we-do__sprite__item we-do__sprite__item_2"></span>
+					<span class = "we-do__sprite__item we-do__sprite__item_3"></span>
+					<span class = "we-do__sprite__item we-do__sprite__item_4"></span>
+					<span class = "we-do__sprite__item we-do__sprite__item_5"></span>
+					
+					<span class = "we-do__sprite__item we-do__sprite__item_6"></span>
+					<span class = "we-do__sprite__item we-do__sprite__item_7"></span>
+					<span class = "we-do__sprite__item we-do__sprite__item_8"></span>
+					<span class = "we-do__sprite__item we-do__sprite__item_9"></span>
+					<span class = "we-do__sprite__item we-do__sprite__item_10"></span>
+				</div>
+			</div>
+			
+			<div class = "blog">
+				<a href = "#" class = "blog__title">Блог</a>
+				<div style = "clear: both"></div>
+				<div class = "blog__item">
+					<a href = "#" class = "blog__item__title">Новый сайт INTEO</a>
+					<p class = "blog__item__text">После запуска нового сайта, рассказываем о пяти основных задачах, которые нам удалось решить с его помощью.</p>
+				</div>
+				<div class = "blog__item">
+					<a href = "#" class = "blog__item__title">Иконки «Рустехники»</a>
+					<p class = "blog__item__text">Дизайнер Тюрин Никита расскажет, как рисовался набор из более чем 60 иконок для компании «Рустехника»</p>
+				</div>
+				<div class = "blog__item" style = "margin-right: 0;">
+					<a href = "#" class = "blog__item__title">Проблемы сайта «Бриллиантов»</a>
+					<p class = "blog__item__text">Как решаются возникающие в процессе работы вопросы и проблемы.</p>
+				</div>
+				<div class = "blog__item" style = "margin-right: 0;" >
+					<a href = "#" class = "blog__item__title">Фирменный стиль INTEO</a>
+					<p class = "blog__item__text">Приоткрываем завесу создания фирменного стиля для нашего агентства.</p>
+				</div>
+			</div>
+		</div>
+		<div class = "footer">
+			<span class = "footer__address">г. Ярославль, Силикатное шоссе, д. 19, оф. 317</span>
+			<div class = "social social_bottom">
+				<span class = "social__image social__image_vk"><a href = "#"></a></span>
+				<span class = "social__image social__image_fb"><a href = "#"></a></span>
+				<span class = "social__image social__image_tw"><a href = "#"></a></span>
+			</div>
+			<div style = "clear: both"></div>
+			<span class = "footer__phone">(4852) 903-906</span>
+		</div>
+	</div>
+</body>
+</html>

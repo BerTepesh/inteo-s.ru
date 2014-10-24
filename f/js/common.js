@@ -293,7 +293,7 @@ function isChecked(id){
 })(jQuery);
 
 $(document).ready(function(){
-	
+	blog_height(".b-blog");
 	$("input[type=number]").keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
@@ -349,3 +349,27 @@ $(document).ready(function(){
 	});	
 	
 });
+
+$(function(){
+	$(".b-menu-btn").not(".b-menu-btn_close").click(function(){
+		$(".b-main").width($(".b-main").width() + 180).addClass("b-main_active").removeClass("b-main_norm");
+		$(".b-menu-btn").removeClass("b-menu-btn_active");
+		$(".b-menu-btn_close").addClass("b-menu-btn_active");
+	});
+	$(".b-menu-btn_close").click(function(){
+		$(".b-main").removeClass("b-main_active").addClass("b-main_norm");
+		$(".b-menu-btn").addClass("b-menu-btn_active");
+		$(".b-menu-btn_close").removeClass("b-menu-btn_active");
+	});
+});
+
+blog_height = function (container){
+	var highest = 0;
+  $(container).find(".b-blog__item").each(function(i, e){
+  	console.log(highest + " "+ $(e).height());
+  	if($(e).height() > highest){
+  		highest = $(e).height();
+  	}
+  });
+  $(container).find(".b-blog__content").height(highest + 10);
+}

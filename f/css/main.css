@@ -10,6 +10,7 @@
 }
 @font-face {
   font-family: "HelveticaNeue";
+  font-weight: lighter;
   src: url("/f/fonts/HelveticaNeueCyr-Roman.otf") format("opentype");
 }
 
@@ -19,6 +20,9 @@ body {
 	height:auto !important;
 	height:100%;
 	margin:0 auto -100px;
+}
+p {
+	margin: 0;
 }
 .clearfix{*zoom:1}
 .clearfix:before,
@@ -104,7 +108,7 @@ body {
   margin: 0;
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   margin-top: -30px;
 }
 .b-menu__item {
@@ -261,7 +265,7 @@ body {
 .b-logo-add__line {
 	border-bottom: 5px solid;
   overflow: hidden;
-  padding-top: 17px;
+  padding-top: 19px;
 }
 .b-logo-add__ico-wrap {
 	height: 48px;
@@ -294,7 +298,7 @@ body {
 }
 .b-analyst {
   width: 100%;
-  background: url(/f/i/analyst-banner.gif) repeat-x;
+  background: url(/f/i/banner2.gif) repeat-x;
   height: 410px;
   position: relative;
   margin-bottom: 55px;
@@ -305,10 +309,14 @@ body {
 .b-analyst__text-wrap {
 	width: 400px;
 	float: left;
+	padding-top: 0;
+}
+.b-analyst__title {
+	margin-bottom: 35px;
 }
 .b-analyst__title p {
   font: bold 50px/.5em 'GothaPro';
-  margin-bottom: 35px;
+  margin-top: 50px;
 }
 .b-analyst__text {
   font-family: 'Roboto', sans-serif;
@@ -338,9 +346,12 @@ body {
 	margin-left: 0;
 }
 .b-projects {
-	margin-bottom: 30px;
-	height: 630px;
+	margin-bottom: 60px;
+	height: 580px;
 	overflow: hidden;
+}
+.b-projects_small {
+	height: 300px;
 }
 .b-projects__title {
   font: bold 16px "GothaPro";
@@ -368,7 +379,7 @@ body {
 	z-index: 1;
 	width: 33.333333%;
 	padding-right: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -420,7 +431,7 @@ body {
 .b-projects__name {
 	width: 220px;	
 	display: inline-block;
-	margin-top: 40px;
+	margin-top: 45px;
 	z-index: 10;
 	text-align: left;
 }
@@ -428,12 +439,12 @@ body {
 	font: 30px "GothaPro";
   font-weight: bold;
   letter-spacing: .05em;
-  margin: 0;
   display: inline;
 }
 .b-projects__text {
 	font: 16px/30px 'HelveticaNeue', sans-serif;
 	letter-spacing: .05em;
+	padding-top: 10px;
 }
 .b-projects__img {
 	position: absolute;
@@ -445,7 +456,7 @@ body {
 }
 .b-wedo {
   position: relative;
-  background: url(/f/i/we-do-banner.gif) repeat-x;
+  background: url(/f/i/banner1.gif) repeat-x;
   height: 570px;
   padding: 10px 30px 30px;
   margin-bottom: 15px;
@@ -453,6 +464,7 @@ body {
 .b-wedo__text {
 	width: 650px;
 	float: right;
+	padding-top: 50px;
 }
 .b-wedo__text,
 .b-wedo__text .link{
@@ -481,7 +493,7 @@ body {
 .b-blog__title {
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .b-blog__item {
@@ -494,10 +506,13 @@ body {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: normal;
+  display: inline;
 }
 .b-blog__text {
-  font: 16px/30px "Roboto", sans-serif;
+  font: 16px/30px 'HelveticaNeue', sans-serif;
+  letter-spacing: .05em;
   color: #000;
+  margin-top: 10px;
 }
 .b-footer {
 	min-height: 100px;
@@ -508,6 +523,10 @@ body {
   letter-spacing: .05em;
   display: inline-block;
   vertical-align: top;
+  line-height: 24px;
+}
+.b-footer__info p {
+	padding-top: 10px;
 }
 .b-social_bottom {
   float: right;
@@ -566,4 +585,155 @@ body {
 }
 .iconize-link:hover .iconize-close:before{
 	background-position: -40px -86px;
+}
+.b-main-banner {
+	height: 330px;
+	background: url(/f/i/banner3.gif) repeat-x;
+	position: relative;
+	margin-bottom: 30px;
+}
+.b-main-banner__name {
+	padding: 140px 0 0 60px;
+	float: left;
+}
+.b-main-banner__title {
+	margin: 0 0 5px;
+}
+.b-main-banner__title span {
+	font-size: 20px;
+}
+.b-main-banner__title a,
+.b-main-banner__title a:focus{
+	font-size: 50px;
+	line-height: 30px;
+	letter-spacing: .05em;
+	margin: 0;
+	font-weight: bold;
+}
+.b-main-banner__text {
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	margin: 0;
+}
+.b-case__detail {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 50px;
+}
+.b-case__detail-title {
+	line-height: 73px;
+	margin: 0;
+	letter-spacing: .2em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.b-case__detail-text {
+	font: normal 16px/30px 'HelveticaNeue', sans-serif;
+	letter-spacing: .05em;
+	padding-right: 30px;
+	font-weight: lighter;
+	margin: 0;
+}
+.b-info-block {
+	margin-bottom: 50px;
+}
+.b-info-block_untitle {
+	padding-top: 30px;
+}
+.b-info-block__img {
+	overflow: hidden;
+	padding-right: 40px;	
+}
+.b-info-block__img img {
+	width: 100%;
+}
+.b-info-block__hint {
+	width: 230px;
+	float: right;
+	font: normal 16px/30px 'HelveticaNeue', sans-serif;
+	letter-spacing: .05em;
+}
+.b-info-block__hint span {
+	font-weight: bold;
+}
+.b-info-block__title {
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+.iconize-hint {
+	margin-top: 50px;
+	height: 1px;
+	padding: 0;
+}
+.iconize-hint:before {
+	width: 20px;
+	height: 25px;
+	top: -50px;
+	left: 0;
+	background-position: -83px -51px;
+}
+.b-info-block__hint-title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	line-height: 30px;
+	letter-spacing: .05em;
+}
+.b-order-project {
+	background: url(/f/i/banner4.gif) repeat-x;
+	height: 330px;
+	padding: 120px 55px 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 60px;
+}
+.b-order-project__text {
+	letter-spacing: .22em;
+	text-transform: uppercase;
+	font-weight: bold;
+	float: left;
+}
+.b-order-project__text span {
+	font-size: 50px;
+}
+.rub {
+	font: normal 16px/30px 'PT Sans', sans-serif;
+}
+.b-order-project__btn {
+	border: 5px solid #000;
+	float: right;
+	padding: 15px 35px;	
+	cursor: pointer;
+	background: #fff;
+	padding-left: 50px;
+	position: relative;
+}
+.b-order-project__btn:before {
+	border: 2px solid #ff007e;
+	width: 12px;
+	height: 12px;
+	border-radius: 10px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	position: absolute;
+	left: 10px;
+}
+.b-order-project__btn .link {
+	font: bold 30px/1em 'GothaPro';
+	letter-spacing: .05em;
+}
+.iconize-link:hover .link {
+	color: #ff007e;
+  text-decoration: none;
+}
+.b-main-banner__img {
+	float: right;
+	padding: 50px 100px;
 }

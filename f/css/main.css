@@ -1,21 +1,29 @@
+@font-face {
+    font-family: 'GothaPro';
+    src: url('gothaproreg-webfont.eot');
+    src: url('gothaproreg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gothaproreg-webfont.woff2') format('woff2'),
+         url('gothaproreg-webfont.woff') format('woff'),
+         url('gothaproreg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
-  font-family: "GothaPro";
-  font-weight: bold;
-  src: url("/f/fonts/GothaProBol.otf") format("opentype");
-}
-@font-face {
-  font-family: "GothaPro";
-  src: url("/f/fonts/GothaProMed.otf") format("opentype");
-}
-@font-face {
-  font-family: "HelveticaNeue";
-  font-weight: lighter;
-  src: url("/f/fonts/HelveticaNeueCyr-Roman.otf") format("opentype");
+    font-family: 'GothaPro';
+    src: url('gothaprobol-webfont.eot');
+    src: url('gothaprobol-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gothaprobol-webfont.woff2') format('woff2'),
+         url('gothaprobol-webfont.woff') format('woff'),
+         url('gothaprobol-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
 }
 
 body {
-  font: normal 16px'GothaPro', sans-serif;
+  font: normal 16px 'Noto Sans', sans-serif;
   min-height:100%;
 	height:auto !important;
 	height:100%;
@@ -35,20 +43,17 @@ p {
 [class^='iconize-']:before, [class*=' iconize-']:before {
   position: absolute;
   top: 0;
-  left: 0;
   display: block;
   content: '';
   background: url('/f/i/icons.png') -9999px -9999px no-repeat;
 }
 .link, .link:focus {
-  font: 16px'GothaPro', sans-serif;
   color: #000;
   cursor: pointer;
-  letter-spacing: .2em;
   text-decoration: none;
   border-bottom: 1px solid;
 }
-.link:hover {
+.link:hover,a:hover .link {
   color: #ff007e;
   text-decoration: none;
 }
@@ -114,47 +119,47 @@ p {
 .b-menu__item {
   list-style: none;
   position: relative;
-  letter-spacing: .02em;
   text-transform: uppercase;
   margin-top: 31px;
+  letter-spacing: .2em;
 }
 .b-menu__item a {
 	font-weight: bold;
 }
-.b-menu__item a:hover .b-menu__item-link{
+.b-menu__item a.active{
 	color: #ff007e;
 }
-.iconize-b-arrow {
-  margin-right: 16px;
-}
+
 .iconize-b-arrow:before {
   width: 9px;
   height: 6px;
-  top: -9px;
-  left: auto;
-  right: -13px;
+  top: 50%;
+  margin-top: -3px;
+  right: -14px;
   background: url(/f/i/icons.png);
   background-position: 0 0;
 }
-.iconize-link a:hover .iconize-b-arrow:before {
+.iconize-b-arrow:hover:before,.active.iconize-b-arrow:before {
   background-position: 0 -6px;
 }
 .b-menu__sub-menu {
   list-style: none;
   padding: 0;
-  padding-top: 15px;
-  width: 180px;
+  padding-top: 24px;
+  width: 160px;
+  margin-bottom: -18px;
 }
 .b-menu__sub-menu li {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   z-index: 20;
 }
 .b-menu__sub-menu li a,
 .b-menu__sub-menu li a:focus{
   letter-spacing: normal;
   text-transform: none;
-  font: 16px/1.5em 'HelveticaNeue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
   font-weight: normal;
 }
 .b-menu__sub-menu li a:hover {
@@ -210,16 +215,16 @@ p {
   left: 0;
 }
 .b-header__text {
-  font: 400 16px 'Roboto', sans-serif;
+  font: 400 16px 'Noto Sans', sans-serif;
+  letter-spacing: -.01em;
   margin: 0;
-  letter-spacing: .015em;
 }
 .b-header__logo_image {
   display: inline-block;
 }
 .b-header__logo-add {
 	overflow: hidden;
-	padding-right: 10px;
+	padding-right: 15px;
 	padding-top: 5px;
 }
 .b-logo-add {
@@ -252,6 +257,7 @@ p {
   text-transform: uppercase;
   float: right;
   padding-top: 15px;
+  letter-spacing: .2em;
 }
 .b-logo-add__line {
 	border-bottom: 5px solid;
@@ -292,7 +298,7 @@ p {
   background: url(/f/i/banner2.gif) repeat-x;
   height: 410px;
   position: relative;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 .b-analyst__content {
 	padding: 35px 40px 0 82px;
@@ -303,17 +309,16 @@ p {
 	padding-top: 0;
 }
 .b-analyst__title {
-	margin-bottom: 35px;
+	margin-bottom: 45px;
 }
 .b-analyst__title p {
-  font: bold 50px/.5em 'GothaPro';
-  margin-top: 50px;
+  font: bold 50px/.5em 'GothaPro', sans-serif;
+  margin-top: 40px;
 }
 .b-analyst__text {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   font-weight: bold;
-  letter-spacing: .05em;
   line-height: 28px;
 }
 .b-sprite {
@@ -345,14 +350,15 @@ p {
 	height: 300px;
 }
 .b-projects__title {
-  font: bold 16px "GothaPro";
+  font-weight: bold;
   color: #000;
   letter-spacing: .2em;
   text-transform: uppercase;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 .b-projects__holder {
+	display: block;
 	max-width: 500px;
 	cursor: pointer;
 }
@@ -375,7 +381,12 @@ p {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-@media (max-width: 1700px) {
+.b-projects__item a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+@media (max-width: 1600px) {
 	.b-projects__item {
 		width: 50%;
 	}
@@ -388,6 +399,7 @@ p {
 	top: 0;
 	left: 0;
 	z-index: -1;
+	display: block;
 }
 .b-projects__holder:hover .b-projects__back {
 	background: url(/f/i/tile1-hover.png) repeat;
@@ -421,29 +433,45 @@ p {
 }
 .b-projects__name {
 	width: 220px;	
-	display: inline-block;
-	margin-top: 45px;
+	display: block;
+	margin-top: 39px;
 	z-index: 10;
 	text-align: left;
+	margin-left: 260px;
 }
 .b-projects__subtitle {
-	font: 30px "GothaPro";
   font-weight: bold;
-  letter-spacing: .05em;
-  display: inline;
+  font-size: 30px;
+  letter-spacing: .04em;
+  display: block;
 }
 .b-projects__text {
-	font: 16px/30px 'HelveticaNeue', sans-serif;
-	letter-spacing: .05em;
+	font-size: 18px;
+	line-height: 30px;
 	padding-top: 10px;
+	display: block;
 }
 .b-projects__img {
 	position: absolute;
-	left: 40px;
-	top: 50px;
-	width: 150px;
-	height: 150px;
+	left: 20px;
+	top: 0;
+	width: 220px;
+	height: 230px;
 	text-align: left;
+	display: block;
+	text-align: center;
+}
+.b-projects__img img {
+	vertical-align: middle;
+	margin: 0 auto;
+}
+@media (max-width: 1700px) {
+	.b-projects__name {
+	  margin-left: 220px;
+	}
+	.b-projects__img {
+	  left: 0;
+	}
 }
 .b-wedo {
   position: relative;
@@ -457,10 +485,8 @@ p {
 	float: right;
 	padding-top: 50px;
 }
-.b-wedo__text,
-.b-wedo__text .link{
-	font: bold 50px/1.5em 'GothaPro';
-	letter-spacing: .05em;
+.b-wedo__text {
+	font: bold 50px/1.5em 'GothaPro', sans-serif;
 }
 
 .b-wedo__sprites {
@@ -477,14 +503,18 @@ p {
 	overflow: hidden;
 	margin-bottom: 40px;
 }
+.b-blog__content {
+	margin-left: -20px;
+}
 .b-blog__item {
-  margin-right: 20px;
+  margin-left: 20px;
   margin-bottom: 30px;
 }
 .b-blog__title {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 30px;
+  letter-spacing: .2em;
 }
 
 .b-blog__item {
@@ -496,22 +526,22 @@ p {
 .b-blog__subtitle:focus {
   font-size: 20px;
   line-height: 30px;
+  font-weight: bold;
   letter-spacing: normal;
   display: inline;
 }
 .b-blog__text {
-  font: 16px/30px 'HelveticaNeue', sans-serif;
-  letter-spacing: .05em;
+  font-size: 16px;
+  line-height: 30px;
   color: #000;
-  margin-top: 10px;
+  margin-top: 11px;
 }
 .b-footer {
 	min-height: 100px;
 }
 .b-footer__info {
-  font: 16px 'HelveticaNeue', sans-serif;
+  font-size: 16px;
   color: #000;
-  letter-spacing: .05em;
   display: inline-block;
   vertical-align: top;
   line-height: 24px;
@@ -534,8 +564,8 @@ p {
 	display: none; 
 	float: left;
 	margin-top: 14px;
-	font: 17px/24px 'HelveticaNeue', sans-serif;
-	letter-spacing: .05em;
+	font-size: 17px;
+	line-height: 24px;
 	margin-right: 40px;
 }
 .b-menu-btn:hover {
@@ -581,14 +611,14 @@ p {
 	height: 330px;
 	background: url(/f/i/banner3.gif) repeat-x;
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 54px;
 }
 .b-main-banner__name {
-	padding: 140px 0 0 60px;
+	padding: 137px 0 0 60px;
 	float: left;
 }
 .b-main-banner__title {
-	margin: 0 0 5px;
+	margin: 0 0 8px;
 }
 .b-main-banner__title span {
 	font-size: 20px;
@@ -597,7 +627,6 @@ p {
 .b-main-banner__title a:focus{
 	font-size: 50px;
 	line-height: 30px;
-	letter-spacing: .05em;
 	margin: 0;
 	font-weight: bold;
 }
@@ -606,26 +635,27 @@ p {
 	line-height: 40px;
 	letter-spacing: .2em;
 	text-transform: uppercase;
+	font-family: "Noto Sans", sans-serif;
+	font-weight: bold;
 	margin: 0;
 }
 .b-case__detail {
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
-	margin-bottom: 50px;
+	margin-bottom: 45px;
 }
 .b-case__detail-title {
-	line-height: 73px;
-	margin: 0;
+	margin: 0 0 22px;
 	letter-spacing: .2em;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 .b-case__detail-text {
-	font: normal 16px/30px 'HelveticaNeue', sans-serif;
-	letter-spacing: .05em;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 30px;
 	padding-right: 30px;
-	font-weight: lighter;
 	margin: 0;
 }
 .b-info-block {
@@ -649,11 +679,13 @@ p {
 	max-width: 760px;
 }
 .b-info-block__hint {
-	font: normal 16px/30px 'HelveticaNeue', sans-serif;
-	letter-spacing: .05em;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 30px;
 	display: inline-block;
 	vertical-align: top;
 	max-width: 230px;
+	margin-right: -100%;
 }
 @media (max-width: 1279px) {
 	.b-info-block__img {
@@ -686,7 +718,6 @@ p {
 	font-weight: bold;
 	margin-bottom: 10px;
 	line-height: 30px;
-	letter-spacing: .05em;
 }
 .b-order-project {
 	background: url(/f/i/banner4.gif) repeat-x;
@@ -698,7 +729,7 @@ p {
 	margin-bottom: 60px;
 }
 .b-order-project__text {
-	letter-spacing: .22em;
+	letter-spacing: .2em;
 	text-transform: uppercase;
 	font-weight: bold;
 	float: left;
@@ -706,34 +737,45 @@ p {
 .b-order-project__text span {
 	font-size: 50px;
 }
+.b-order-project__text b {
+	font-family: "GothaPro", sans-serif;
+	margin-right: 8px;
+}
 .rub {
 	font: normal 16px/30px 'PT Sans', sans-serif;
 }
 .b-order-project__btn {
 	border: 5px solid #000;
 	float: right;
-	padding: 15px 35px;	
+	padding: 14px 30px 16px;	
 	cursor: pointer;
 	background: #fff;
-	padding-left: 50px;
+	padding-left: 55px;
 	position: relative;
+	display: block;
+	text-decoration: none;
+	margin-top: 10px;
 }
 .b-order-project__btn:before {
 	border: 2px solid #ff007e;
 	width: 12px;
 	height: 12px;
 	border-radius: 10px;
-	top: 0;
+	top: 1px;
 	bottom: 0;
 	margin: auto;
 	position: absolute;
-	left: 10px;
+	left: 15px;
 }
 .b-order-project__btn .link {
-	font: bold 30px/1em 'GothaPro';
-	letter-spacing: .05em;
+	font: bold 30px/1em 'GothaPro', sans-serif;
 }
 .b-main-banner__img {
 	float: right;
 	padding: 50px 100px;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }

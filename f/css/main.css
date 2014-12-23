@@ -619,16 +619,12 @@ p {
 }
 .b-main-banner__title {
 	margin: 0 0 8px;
+	font-size: 50px;
+	line-height: 30px;
+	font-weight: bold;
 }
 .b-main-banner__title span {
 	font-size: 20px;
-}
-.b-main-banner__title a,
-.b-main-banner__title a:focus{
-	font-size: 50px;
-	line-height: 30px;
-	margin: 0;
-	font-weight: bold;
 }
 .b-main-banner__text {
 	font-size: 16px;
@@ -692,9 +688,6 @@ p {
 		min-width: 700px;
 	} 
 }
-.b-info-block__hint span {
-	font-weight: bold;
-}
 .b-info-block__title {
 	letter-spacing: .2em;
 	text-transform: uppercase;
@@ -702,22 +695,23 @@ p {
 	margin-bottom: 35px;
 }
 .iconize-hint {
-	margin-top: 50px;
+	margin-top: 29px;
 	height: 1px;
 	padding: 0;
 }
 .iconize-hint:before {
 	width: 20px;
 	height: 25px;
-	top: -50px;
+	top: -29px;
 	left: 0;
 	background-position: -83px -51px;
 }
-.b-info-block__hint-title {
+.b-info-block__hint h4 {
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 10px;
 	line-height: 30px;
+	margin-top: 0;
 }
 .b-order-project {
 	background: url(/f/i/banner4.gif) repeat-x;

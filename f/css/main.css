@@ -6,12 +6,12 @@
 }
 @font-face {
   font-family: "GothaPro";
-  src: url("/f/fonts/GothaProMed.otf") format("opentype");
+  src: url("../../f/fonts/GothaProMed.otf") format("opentype");
 }
 @font-face {
   font-family: "HelveticaNeue";
   font-weight: lighter;
-  src: url("/f/fonts/HelveticaNeueCyr-Roman.otf") format("opentype");
+  src: url("../../f/fonts/HelveticaNeueCyr-Roman.otf") format("opentype");
 }
 
 body {
@@ -38,7 +38,7 @@ p {
   left: 0;
   display: block;
   content: '';
-  background: url('/f/i/icons.png') -9999px -9999px no-repeat;
+  background: url('../../f/i/icons.png') -9999px -9999px no-repeat;
 }
 [class^="icon-"], [class*=" icon-"] {
   display: inline-block;
@@ -46,7 +46,7 @@ p {
   height: 14px;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("/f/i/icons.png");
+  background-image: url("../../f/i/icons.png");
   background-repeat: no-repeat
 }
 .icon-arrow {
@@ -158,7 +158,7 @@ a:hover .icon-del {
   top: -9px;
   left: auto;
   right: -13px;
-  background: url(/f/i/icons.png);
+  background: url(../../f/i/icons.png);
   background-position: 0 0;
 }
 .iconize-link a:hover .iconize-b-arrow:before {
@@ -196,7 +196,7 @@ a:hover .icon-del {
   float: left;
   width: 20px;
   height: 20px;
-  background: url(/f/i/soc.png);
+  background: url(../../f/i/soc.png);
   margin-right: 10px;
   cursor: pointer;
 }
@@ -290,7 +290,7 @@ a:hover .icon-del {
 	position: relative;
 }
 .b-logo-add__ico {
-	background: url(/f/i/icons.png);
+	background: url(../../f/i/icons.png);
 	background-position: -50px 0;
 	width: 41px;
 	height: 41px;
@@ -314,7 +314,7 @@ a:hover .icon-del {
 }
 .b-analyst {
   width: 100%;
-  background: url(/f/i/banner2.gif) repeat-x;
+  background: url(../../f/i/banner2.gif) repeat-x;
   height: 410px;
   position: relative;
   margin-bottom: 55px;
@@ -353,7 +353,7 @@ a:hover .icon-del {
 .b-sprite__item {
   width: 40px;
   height: 40px;
-  background: url(/f/i/analyst_sprite.png);
+  background: url(../../f/i/analyst_sprite.png);
   background-position: 0 0;
   margin-bottom: 50px;
   margin-left: 40px;
@@ -408,14 +408,14 @@ a:hover .icon-del {
 .b-projects__back {
 	width: 390px;
 	height: 230px;
-	background: url(/f/i/tile1.png) repeat;
+	background: url(../../f/i/tile1.png) repeat;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -1;
 }
 .b-projects__holder:hover .b-projects__back {
-	background: url(/f/i/tile1-hover.png) repeat;
+	background: url(../../f/i/tile1-hover.png) repeat;
 }
 .b-projects__holder:hover .b-projects__back:after {
 	content: '';
@@ -424,25 +424,25 @@ a:hover .icon-del {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: url(/f/i/project-border.png);
+	background: url(../../f/i/project-border.png);
 }
 .b-projects__back_2 {
-	background: url(/f/i/tile2.png) repeat;
+	background: url(../../f/i/tile2.png) repeat;
 }
 .b-projects__holder:hover .b-projects__back_2 {
-	background: url(/f/i/tile2-hover.png) repeat;
+	background: url(../../f/i/tile2-hover.png) repeat;
 }
 .b-projects__back_3 {
-	background: url(/f/i/tile3.png) repeat;
+	background: url(../../f/i/tile3.png) repeat;
 }
 .b-projects__holder:hover .b-projects__back_3 {
-	background: url(/f/i/tile3-hover.png) repeat;
+	background: url(../../f/i/tile3-hover.png) repeat;
 }
 .b-projects__back_4 {
-	background: url(/f/i/tile4.png) repeat;
+	background: url(../../f/i/tile4.png) repeat;
 }
 .b-projects__holder:hover .b-projects__back_4 {
-	background: url(/f/i/tile4-hover.png) repeat;
+	background: url(../../f/i/tile4-hover.png) repeat;
 }
 .b-projects__name {
 	width: 220px;	
@@ -472,7 +472,7 @@ a:hover .icon-del {
 }
 .b-wedo {
   position: relative;
-  background: url(/f/i/banner1.gif) repeat-x;
+  background: url(../../f/i/banner1.gif) repeat-x;
   height: 570px;
   padding: 10px 30px 30px;
   margin-bottom: 15px;
@@ -494,7 +494,7 @@ a:hover .icon-del {
 	height: 400px;
 }
 .b-sprite_plus .b-sprite__item {
-  background: url(/f/i/we_do_sprite.png);
+  background: url(../../f/i/we_do_sprite.png);
   background-position: 0 0;
   margin-bottom: 40px;
 }
@@ -604,12 +604,12 @@ a:hover .icon-del {
 }
 .b-main-banner {
 	height: 330px;
-	background: url(/f/i/banner3.gif) repeat-x;
+	background: url(../../f/i/banner3.gif) repeat-x;
 	position: relative;
 	margin-bottom: 30px;
 }
 .b-main-banner_order {
-	background: url(/f/i/banner5.gif) repeat-x;
+	background: url(../../f/i/banner5.gif) repeat-x;
 	margin-bottom: 60px;
 }
 .b-main-banner__name {
@@ -744,7 +744,7 @@ a:hover .icon-del {
 	letter-spacing: .05em;
 }
 .b-order-project {
-	background: url(/f/i/banner4.gif) repeat-x;
+	background: url(../../f/i/banner4.gif) repeat-x;
 	height: 330px;
 	padding: 120px 55px 0;
 	-moz-box-sizing: border-box;
@@ -933,7 +933,7 @@ a:hover .icon-del {
 	top: 0;
 	bottom: 0;
 	margin: auto 0;
-	background: url(/f/i/icons.png) -114px -55px;
+	background: url(../../f/i/icons.png) -114px -55px;
 }
 .b-checkbox-wrap {
 	display: inline-block;
@@ -1006,7 +1006,7 @@ a:hover .icon-del {
 .b-order-popup:before {
 	position: absolute;
 	content: '';
-	background: url(/f/i/popup-back.png);
+	background: url(../../f/i/popup-back.png);
 	width: 520px;
 	height: 610px;
 	bottom: 0;

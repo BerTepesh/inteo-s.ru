@@ -65,7 +65,7 @@ a:hover .icon-arrow {
 a:hover .icon-del {
 	background-position: -144px -81px;
 }
-.link, .link:focus {
+.link {
   font: 16px'GothaPro', sans-serif;
   color: #000;
   cursor: pointer;
